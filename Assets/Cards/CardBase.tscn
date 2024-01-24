@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/Cards/CardBase.gd" type="Script" id=1]
+
+[node name="CardBase" type="MarginContainer"]
+margin_right = 100.0
+margin_bottom = 150.0
+rect_pivot_offset = Vector2( 50, 75 )
+script = ExtResource( 1 )
+
+[node name="Red" type="Sprite" parent="."]
+
+[node name="ColorYellow" type="ColorRect" parent="Red"]
+margin_right = 100.0
+margin_bottom = 150.0
+color = Color( 0.847059, 0.85098, 0.141176, 1 )
+
+[node name="LabelYellow" type="RichTextLabel" parent="Red/ColorYellow"]
+margin_left = 12.0
+margin_top = 53.0
+margin_right = 97.0
+margin_bottom = 80.0
+text = "Hello World"
